@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Abdullah - Web Developer & Store Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">x</button>
+    <a href="index.html" onclick="closeMobileMenu()">Home</a>
+    <a href="about.html" onclick="closeMobileMenu()">About</a>
+    <a href="projects.html" onclick="closeMobileMenu()">Projects</a>
+    <a href="experience.html" onclick="closeMobileMenu()">Experience</a>
+    <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+  </div>
+
+  <nav id="nav">
+    <a class="logo" href="index.html">Abdullah<span>.</span></a>
+    <ul class="nav-links">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a class="nav-hire" href="contact.html">Hire Me</a>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="grid-lines"></div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-tag">Available for work</div>
+        <h1 class="hero-title">I'm <em>Muhammad</em><br>Abdullah</h1>
+        <p class="hero-subtitle">Web Developer & Store Theme Designer</p>
+        <p class="hero-desc">
+          Crafting high-performance websites and stunning store themes with 1+ year of hands-on experience. I turn ideas
+          into digital experiences that look exceptional and convert.
+        </p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="projects.html">View Projects</a>
+          <a class="btn-outline" href="contact.html">Let's Talk</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-stat-card">
+          <div class="stat-num">1+</div>
+          <div class="stat-label">Year of Experience</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="stat-num">15+</div>
+          <div class="stat-label">Projects Completed</div>
+          <div class="hero-stack" style="margin-top:16px;">
+            <span class="stack-pill">HTML/CSS</span>
+            <span class="stack-pill">JavaScript</span>
+            <span class="stack-pill">Shopify Liquid</span>
+            <span class="stack-pill">WordPress</span>
+          </div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Client Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="section-inner">
+      <div class="title-row">
+        <div>
+          <div class="section-label reveal">What I Do</div>
+          <h2 class="section-title reveal reveal-delay-1">Websites that look<br><em>sharp</em> and sell</h2>
+        </div>
+        <p class="section-intro reveal reveal-delay-2">
+          I build fast portfolio sites, business pages, Shopify storefronts, and WordPress experiences with clean
+          layouts, responsive behavior, and practical conversion details.
+        </p>
+      </div>
+      <div class="overview-grid">
+        <div class="overview-card reveal">
+          <div>
+            <div class="overview-num">01</div>
+            <h3>Custom Websites</h3>
+            <p>Responsive HTML, CSS, and JavaScript builds for personal brands, service businesses, and landing pages
+              that need to feel polished.</p>
+          </div>
+          <a class="btn-outline" href="projects.html">See Work</a>
+        </div>
+        <div class="overview-card reveal reveal-delay-1">
+          <div>
+            <div class="overview-num">02</div>
+            <h3>Shopify Themes</h3>
+            <p>Theme customization, product sections, cart improvements, and storefront layouts designed for smooth
+              browsing and stronger trust.</p>
+          </div>
+          <a class="btn-outline" href="about.html">View Skills</a>
+        </div>
+        <div class="overview-card reveal reveal-delay-2">
+          <div>
+            <div class="overview-num">03</div>
+            <h3>WordPress Sites</h3>
+            <p>Business websites, WooCommerce layouts, custom pages, and practical content structures that are easy to
+              manage after launch.</p>
+          </div>
+          <a class="btn-outline" href="contact.html">Discuss Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="featured-work">
+    <div class="section-inner split-showcase">
+      <div class="reveal">
+        <div class="section-label">Featured Work</div>
+        <h2 class="section-title" style="margin-bottom:24px;">Recent <em>builds</em></h2>
+        <p class="section-intro">
+          A quick preview of the kind of work I handle. The full projects page includes more examples and filters by
+          platform.
+        </p>
+        <a class="btn-primary" href="projects.html" style="margin-top:34px;">All Projects</a>
+      </div>
+      <div class="mini-list reveal reveal-delay-1">
+        <a class="mini-item" href="projects.html"><span>01</span><strong>Fashion Brand
+            Store</strong><em>Shopify</em></a>
+        <a class="mini-item" href="projects.html"><span>02</span><strong>Service Agency
+            Site</strong><em>WordPress</em></a>
+        <a class="mini-item" href="projects.html"><span>03</span><strong>Real Estate Landing Page</strong><em>Web
+            Dev</em></a>
+        <a class="mini-item" href="projects.html"><span>04</span><strong>WooCommerce Electronics
+            Shop</strong><em>Store</em></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="section-inner">
+      <div class="title-row">
+        <div>
+          <div class="section-label reveal">Process</div>
+          <h2 class="section-title reveal reveal-delay-1">How I move from<br>idea to <em>launch</em></h2>
+        </div>
+      </div>
+      <div class="process-grid">
+        <div class="process-step reveal"><span>STEP 01</span>
+          <h3>Discover</h3>
+          <p>We clarify goals, audience, pages, references, and what the website needs to make visitors do next.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-1"><span>STEP 02</span>
+          <h3>Design</h3>
+          <p>I shape the structure, visual direction, spacing, and responsive layout before development gets heavy.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-2"><span>STEP 03</span>
+          <h3>Build</h3>
+          <p>The site is developed with clean code, careful styling, mobile checks, and platform-specific setup where
+            needed.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-3"><span>STEP 04</span>
+          <h3>Polish</h3>
+          <p>Final fixes cover performance, forms, copy tweaks, navigation, and the details that make the site feel
+            finished.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="section-inner cta-inner">
+      <div class="reveal">
+        <div class="section-label">Start Here</div>
+        <h2 class="section-title">Need a website that<br><em>feels complete?</em></h2>
+        <p>Send me your idea, current site, or store link. I can help turn it into a cleaner, faster, more useful online
+          presence.</p>
+      </div>
+      <a class="btn-primary reveal reveal-delay-1" href="contact.html">Contact Me</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <a class="footer-logo" href="index.html">Abdullah<span>.</span></a>
+      <p class="footer-copy">2026 Muhammad Abdullah. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="projects.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="contact-strip" id="contactStrip">
+    <span class="strip-text">Open to new opportunities</span>
+    <a class="strip-email" href="contact.html">zonemike05@gmail.com -></a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
