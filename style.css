@@ -47,7 +47,6 @@ body {
   color: var(--white);
   font-family: var(--font-ui);
   overflow-x: hidden;
-  cursor: none;
 }
 
 body.page section:first-of-type {
@@ -73,6 +72,7 @@ body.page section:first-of-type {
   z-index: 9999;
   transform: translate(-50%, -50%);
   transition: transform 0.1s, width 0.3s, height 0.3s, background 0.3s;
+  display: none;
 }
 
 #cursor-ring {
@@ -86,6 +86,7 @@ body.page section:first-of-type {
   transform: translate(-50%, -50%);
   transition: transform 0.12s ease, width 0.3s, height 0.3s, opacity 0.3s;
   opacity: 0.5;
+  display: none;
 }
 
 body.hovering #cursor {
@@ -98,6 +99,17 @@ body.hovering #cursor-ring {
   width: 50px;
   height: 50px;
   opacity: 0.8;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body {
+    cursor: none;
+  }
+
+  #cursor,
+  #cursor-ring {
+    display: block;
+  }
 }
 
 /* Nav */
