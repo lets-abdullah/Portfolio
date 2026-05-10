@@ -8,7 +8,27 @@ This is my personal portfolio website where I showcase my:
 - 🏆 Achievements
 - 📞 Contact Information
 
-The website is fully responsive and designed to provide a smooth user experience across all devices.
+## 📁 Project Structure
+
+```
+Portfolio-Website/
+├── index.html
+├── pages/
+│   ├── about.html
+│   ├── contact.html
+│   ├── experience.html
+│   └── projects.html
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── script.js
+├── screenshots/
+│   ├── home-page.png
+│   ├── projects-section.png
+│   └── contact-page.png
+└── README.md
+```
 
 ## ✨ Features
 
@@ -21,16 +41,37 @@ The website is fully responsive and designed to provide a smooth user experience
 
 ## 🛠️ Technologies Used
 
-- HTML
-- CSS
-- JavaScript
-- React (if used)
-- Tailwind CSS / Bootstrap (if used)
+- HTML5
+- CSS3
+- JavaScript (ES6+)
 
-## 📸 Preview
+## � Getting Started
 
-(Add screenshots here)
+To view the portfolio locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/Portfolio-Website.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd Portfolio-Website
+   ```
+
+3. Open `index.html` in your web browser.
+
+## �📸 Preview
+
+### Home Page
+![Home Page](screenshots/Homepage.png)
+
+### Core Skills
+![Projects Section](screenshots/Core-Skills.png)
+
+### Contact Page
+![Contact Page](screenshots/Contact-Page.png)
 
 ## 🌍 Live Demo
 
-(Add your portfolio link here)
+[Preview](https://itx-abdullah-wd.github.io/Portfolio/index.html)
