@@ -74,4 +74,4 @@ To view the portfolio locally:
 
 ## 🌍 Live Demo
 
-[Preview]([https://itx-abdullah-wd.github.io/Portfolio/index.html](https://lets-abdullah.github.io/Portfolio/))
+[Preview](https://lets-abdullah.github.io/Portfolio/)
