@@ -226,9 +226,9 @@
 
   function resolveLink(page) {
     const map = {
-      contact:    isInPages() ? 'contact.html'    : 'pages/contact.html',
-      about:      isInPages() ? 'about.html'      : 'pages/about.html',
-      projects:   isInPages() ? 'projects.html'   : 'pages/projects.html',
+      contact: isInPages() ? 'contact.html' : 'pages/contact.html',
+      about: isInPages() ? 'about.html' : 'pages/about.html',
+      projects: isInPages() ? 'projects.html' : 'pages/projects.html',
       experience: isInPages() ? 'experience.html' : 'pages/experience.html',
     };
     return map[page] || '#';
@@ -241,11 +241,11 @@
   /* Handle shorthand quick replies that contain page links */
   function resolveQuickReply(label) {
     const map = {
-      'Start a project':  resolveLink('contact'),
-      'View projects':    resolveLink('projects'),
-      'See projects':     resolveLink('projects'),
-      'Hire him':         resolveLink('contact'),
-      'Get a quote':      resolveLink('contact'),
+      'Start a project': resolveLink('contact'),
+      'View projects': resolveLink('projects'),
+      'See projects': resolveLink('projects'),
+      'Hire him': resolveLink('contact'),
+      'Get a quote': resolveLink('contact'),
     };
     return map[label] || null;
   }

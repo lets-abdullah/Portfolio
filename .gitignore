@@ -55,3 +55,4 @@ Thumbs.db
 
 # Screenshots (uncomment if you want to ignore actual screenshots)
 # screenshots/*.png
+.vercel
