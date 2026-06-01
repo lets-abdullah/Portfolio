@@ -8,28 +8,6 @@ This is my personal portfolio website where I showcase my:
 - 🏆 Achievements
 - 📞 Contact Information
 
-## 📁 Project Structure
-
-```
-Portfolio-Website/
-├── index.html
-├── pages/
-│   ├── about.html
-│   ├── contact.html
-│   ├── experience.html
-│   └── projects.html
-├── assets/
-│   ├── css/
-│   │   └── style.css
-│   └── js/
-│       └── script.js
-├── screenshots/
-│   ├── home-page.png
-│   ├── projects-section.png
-│   └── contact-page.png
-└── README.md
-```
-
 ## ✨ Features
 
 - Responsive Design
@@ -74,4 +52,4 @@ To view the portfolio locally:
 
 ## 🌍 Live Demo
 
-[Preview](https://lets-abdullah.github.io/Portfolio/)
+[Live Preview](https://abdullah-portfolio-pk.vercel.app/)
