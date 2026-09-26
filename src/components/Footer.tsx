@@ -185,14 +185,7 @@ export const Footer: React.FC = () => {
 
       {/* Main Footer Links & Information Grid */}
       <div className="container" style={{ padding: '60px 20px 40px 20px', position: 'relative', zIndex: 2 }}>
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-            gap: '40px',
-            marginBottom: '50px'
-          }}
-        >
+        <div className="footer-links-grid">
           {/* Column 1: Brand & Bio */}
           <div>
             <Link

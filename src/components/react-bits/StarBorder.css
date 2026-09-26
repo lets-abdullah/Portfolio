@@ -22,13 +22,15 @@
 
 .star-border-container {
   position: relative;
-  display: inline-block;
+  display: block;
+  width: 100%;
+  max-width: 100%;
   overflow: hidden;
   border-radius: 20px;
   text-decoration: none;
   border: none;
   background: transparent;
-  cursor: pointer;
+  box-sizing: border-box;
 }
 
 .star-movement-bottom {
@@ -61,16 +63,14 @@
   position: relative;
   z-index: 1;
   border: 1px solid;
-  text-align: center;
   font-size: 15px;
   padding: 12px 24px;
   border-radius: 20px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   font-family: inherit;
-  font-weight: 600;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 

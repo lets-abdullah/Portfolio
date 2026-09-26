@@ -719,11 +719,11 @@ export const Home: React.FC = () => {
                   title="Click to copy email address"
                 >
                   <div className="contact-icon">@</div>
-                  <div style={{ flex: 1 }}>
+                  <div style={{ flex: 1, minWidth: 0, overflowWrap: 'anywhere' }}>
                     <span style={{ display: 'block', fontSize: '0.72rem', fontFamily: 'var(--font-mono)', color: 'var(--gold-bright)' }}>
                       {copied ? '✓ COPIED TO CLIPBOARD' : 'CLICK TO COPY EMAIL'}
                     </span>
-                    <strong style={{ fontSize: '0.9rem' }}>{PERSONAL_INFO.email}</strong>
+                    <strong style={{ fontSize: '0.88rem', wordBreak: 'break-all' }}>{PERSONAL_INFO.email}</strong>
                   </div>
                   {copied ? <Check size={16} color="var(--accent-emerald)" /> : <Copy size={16} color="var(--text-muted)" />}
                 </div>
@@ -731,44 +731,44 @@ export const Home: React.FC = () => {
                 {/* Phone */}
                 <a className="contact-item-row" href={`tel:${PERSONAL_INFO.phone}`}>
                   <div className="contact-icon">PH</div>
-                  <div>
+                  <div style={{ flex: 1, minWidth: 0, overflowWrap: 'anywhere' }}>
                     <span style={{ display: 'block', fontSize: '0.72rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)' }}>
                       PHONE / WHATSAPP
                     </span>
-                    <strong style={{ fontSize: '0.9rem' }}>{PERSONAL_INFO.phone}</strong>
+                    <strong style={{ fontSize: '0.88rem' }}>{PERSONAL_INFO.phone}</strong>
                   </div>
                 </a>
 
                 {/* GitHub */}
                 <a className="contact-item-row" href={PERSONAL_INFO.github} target="_blank" rel="noopener noreferrer">
                   <div className="contact-icon">GIT</div>
-                  <div>
+                  <div style={{ flex: 1, minWidth: 0, overflowWrap: 'anywhere' }}>
                     <span style={{ display: 'block', fontSize: '0.72rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)' }}>
                       GITHUB PROFILE
                     </span>
-                    <strong style={{ fontSize: '0.9rem' }}>github.com/lets-abdullah</strong>
+                    <strong style={{ fontSize: '0.88rem', wordBreak: 'break-all' }}>github.com/lets-abdullah</strong>
                   </div>
                 </a>
 
                 {/* LinkedIn */}
                 <a className="contact-item-row" href={PERSONAL_INFO.linkedin} target="_blank" rel="noopener noreferrer">
                   <div className="contact-icon">IN</div>
-                  <div>
+                  <div style={{ flex: 1, minWidth: 0, overflowWrap: 'anywhere' }}>
                     <span style={{ display: 'block', fontSize: '0.72rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)' }}>
                       LINKEDIN NETWORK
                     </span>
-                    <strong style={{ fontSize: '0.9rem' }}>linkedin.com/in/muhammad-abdullah</strong>
+                    <strong style={{ fontSize: '0.88rem', wordBreak: 'break-all' }}>linkedin.com/in/muhammad-abdullah</strong>
                   </div>
                 </a>
 
                 {/* Location */}
                 <div className="contact-item-row">
                   <div className="contact-icon">LOC</div>
-                  <div>
+                  <div style={{ flex: 1, minWidth: 0, overflowWrap: 'anywhere' }}>
                     <span style={{ display: 'block', fontSize: '0.72rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)' }}>
                       LOCATION
                     </span>
-                    <strong style={{ fontSize: '0.9rem' }}>{PERSONAL_INFO.location}</strong>
+                    <strong style={{ fontSize: '0.88rem' }}>{PERSONAL_INFO.location}</strong>
                   </div>
                 </div>
               </div>
