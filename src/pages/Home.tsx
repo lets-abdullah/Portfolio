@@ -282,11 +282,10 @@ export const Home: React.FC = () => {
             {/* Card 3: Left Bottom — Scalable Systems */}
             <div className="bento-card">
               <div className="bento-card-visual">
-                <div style={{
+                <div className="bento-systems-grid" style={{
                   display: 'grid',
-                  gridTemplateColumns: 'repeat(3, 1fr)',
                   gap: '8px',
-                  padding: '20px',
+                  padding: '16px',
                   width: '100%'
                 }}>
                   {['POS System', 'Hotel ERP', 'Pharmacy ERP', 'Gym Portal', 'Mandi POS', 'REST APIs'].map((s) => (
@@ -323,7 +322,7 @@ export const Home: React.FC = () => {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px' }} className="domains-grid">
+          <div className="domains-grid">
             {/* Domain 01 — MERN Full-Stack */}
             <div style={{
               background: 'rgba(45, 49, 58, 0.9)',
@@ -446,13 +445,7 @@ export const Home: React.FC = () => {
             </p>
           </div>
 
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-            gap: '24px'
-          }}
-            className="projects-showcase-grid"
-          >
+          <div className="projects-showcase-grid">
             {PROJECTS.map((project) => (
               <div
                 key={project.id}
@@ -794,7 +787,7 @@ export const Home: React.FC = () => {
                   </div>
                 ) : (
                   <form onSubmit={handleFormSubmit}>
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px' }}>
+                    <div className="form-row-2col">
                       <div className="form-group">
                         <label>FIRST NAME</label>
                         <input
