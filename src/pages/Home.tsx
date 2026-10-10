@@ -25,6 +25,7 @@ import {
   BlurText,
   StarBorder
 } from '../components/react-bits';
+import { HeroNetworkCanvas } from '../components/HeroNetworkCanvas';
 
 export const Home: React.FC = () => {
   const [copied, setCopied] = useState(false);
@@ -115,7 +116,11 @@ export const Home: React.FC = () => {
       {/* 1. HERO SECTION */}
       <section id="hero" style={{ position: 'relative', overflow: 'hidden' }}>
         <div className="hero-mesh" />
-        <div className="grid-overlay" />
+        {/* Full-bleed right-anchored Constellation Network (stretches from blue line mark behind text to right screen edge) */}
+        <div className="hero-network-backdrop">
+          <HeroNetworkCanvas />
+        </div>
+
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <div className="hero-grid">
             {/* Left Column */}
@@ -167,7 +172,7 @@ export const Home: React.FC = () => {
                   <div className="quick-stat-lbl">Full-Stack Dev</div>
                 </div>
                 <div className="quick-stat-box">
-                  <div className="quick-stat-num">4+</div>
+                  <div className="quick-stat-num">{PROJECTS.length}+</div>
                   <div className="quick-stat-lbl">Major Systems</div>
                 </div>
                 <div className="quick-stat-box">
@@ -177,16 +182,8 @@ export const Home: React.FC = () => {
               </div>
             </div>
 
-            {/* Right Column: Photo with Grid Overlay */}
-            <div className="hero-photo-col">
-              <div className="hero-photo-frame">
-                <img
-                  src="/screenshots/abdullah-hero.jpg"
-                  alt="Muhammad Abdullah — Full-Stack Engineer"
-                />
-                <div className="hero-photo-grid" />
-              </div>
-            </div>
+            {/* Right Column: spacer so grid retains two columns while backdrop shines through */}
+            <div className="hero-network-spacer" aria-hidden="true" />
           </div>
         </div>
       </section>
@@ -288,7 +285,7 @@ export const Home: React.FC = () => {
                   padding: '16px',
                   width: '100%'
                 }}>
-                  {['POS System', 'Hotel ERP', 'Pharmacy ERP', 'Gym Portal', 'Mandi POS', 'REST APIs'].map((s) => (
+                  {['Car Rental', 'POS System', 'Hotel ERP', 'Gym Portal', 'Mandi POS', 'REST APIs'].map((s) => (
                     <div key={s} style={{
                       background: 'rgba(20, 20, 20, 0.9)',
                       border: '1px solid rgba(255, 255, 255, 0.08)',

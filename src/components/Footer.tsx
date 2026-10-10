@@ -14,7 +14,7 @@ import {
   Check,
   Copy
 } from 'lucide-react';
-import { PERSONAL_INFO, PROJECTS } from '../data/portfolioData';
+import { PERSONAL_INFO } from '../data/portfolioData';
 import { MagicRings, ShinyText, StarBorder } from './react-bits';
 
 export const Footer: React.FC = () => {
@@ -219,130 +219,87 @@ export const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Column 2: Navigation Links */}
-          <div>
-            <h4
-              style={{
-                fontSize: '0.85rem',
-                fontFamily: 'var(--font-mono)',
-                color: 'var(--gold-bright)',
-                letterSpacing: '0.08em',
-                marginBottom: '16px',
-                textTransform: 'uppercase'
-              }}
-            >
-              Navigation
-            </h4>
-            <ul
-              style={{
-                listStyle: 'none',
-                padding: 0,
-                margin: 0,
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '10px'
-              }}
-            >
-              <li>
-                <a
-                  href="#hero"
-                  onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}
-                  style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.88rem' }}
-                >
-                  Home (Overview)
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}
-                  style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.88rem' }}
-                >
-                  About & Why Work With Me
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#skills"
-                  onClick={(e) => { e.preventDefault(); scrollToSection('skills'); }}
-                  style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.88rem' }}
-                >
-                  Core Skills & Domains
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#projects"
-                  onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}
-                  style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.88rem' }}
-                >
-                  Production Projects
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#experience"
-                  onClick={(e) => { e.preventDefault(); scrollToSection('experience'); }}
-                  style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.88rem' }}
-                >
-                  Work Experience
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}
-                  style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.88rem' }}
-                >
-                  Contact & Hire
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 3: Featured Production Systems */}
-          <div>
-            <h4
-              style={{
-                fontSize: '0.85rem',
-                fontFamily: 'var(--font-mono)',
-                color: 'var(--gold-bright)',
-                letterSpacing: '0.08em',
-                marginBottom: '16px',
-                textTransform: 'uppercase'
-              }}
-            >
-              Featured Systems
-            </h4>
-            <ul
-              style={{
-                listStyle: 'none',
-                padding: 0,
-                margin: 0,
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '10px'
-              }}
-            >
-              {PROJECTS.map((p) => (
-                <li key={p.id}>
+          {/* Column 2: Navigation Links (Centered) */}
+          <div className="footer-nav-col">
+            <div className="footer-nav-inner">
+              <h4
+                style={{
+                  fontSize: '0.85rem',
+                  fontFamily: 'var(--font-mono)',
+                  color: 'var(--gold-bright)',
+                  letterSpacing: '0.08em',
+                  marginBottom: '16px',
+                  textTransform: 'uppercase'
+                }}
+              >
+                Navigation
+              </h4>
+              <ul
+                style={{
+                  listStyle: 'none',
+                  padding: 0,
+                  margin: 0,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '10px'
+                }}
+              >
+                <li>
+                  <a
+                    href="#hero"
+                    onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}
+                    style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.88rem' }}
+                  >
+                    Home (Overview)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}
+                    style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.88rem' }}
+                  >
+                    About & Why Work With Me
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#skills"
+                    onClick={(e) => { e.preventDefault(); scrollToSection('skills'); }}
+                    style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.88rem' }}
+                  >
+                    Core Skills & Domains
+                  </a>
+                </li>
+                <li>
                   <a
                     href="#projects"
                     onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}
-                    style={{
-                      color: 'var(--text-secondary)',
-                      textDecoration: 'none',
-                      fontSize: '0.86rem',
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '6px'
-                    }}
+                    style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.88rem' }}
                   >
-                    <span>{p.title}</span>
+                    Production Projects
                   </a>
                 </li>
-              ))}
-            </ul>
+                <li>
+                  <a
+                    href="#experience"
+                    onClick={(e) => { e.preventDefault(); scrollToSection('experience'); }}
+                    style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.88rem' }}
+                  >
+                    Work Experience
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}
+                    style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.88rem' }}
+                  >
+                    Contact & Hire
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           {/* Column 4: Connect & Resume */}

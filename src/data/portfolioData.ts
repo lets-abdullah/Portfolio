@@ -16,35 +16,13 @@ export const PERSONAL_INFO = {
 
 export const PROJECTS: Project[] = [
   {
-    id: 'elysia-hotel',
-    title: 'Elysia Hotel Booking',
+    id: 'driveflex',
+    title: 'DriveFlex Rentals',
     category: 'mern',
-    description: 'Full-stack hotel reservation platform.',
-    tags: ['MERN Stack', 'Hotel Website', 'React / Node', 'MongoDB', 'REST APIs'],
-    image: '/screenshots/hotel.png',
-    demoUrl: 'https://elysia-frontend-hotel.vercel.app/',
-    repoUrl: 'https://github.com/lets-abdullah',
-    featured: true
-  },
-    {
-    id: 'elysia-hotel-erp',
-    title: 'Elysia Hotel ERP',
-    category: 'mern',
-    description: 'Full-stack hotel ERP for room bookings, guest ledgers, and automated billing.',
-    tags: ['Dashboard', 'Hotel ERP', 'React / Node', 'MongoDB', 'REST APIs'],
-    image: '/screenshots/hotel erp.png',
-    demoUrl: 'https://elysia-zeta-bice.vercel.app/',
-    repoUrl: 'https://github.com/lets-abdullah',
-    featured: true
-  },
-    {
-    id: 'wedding',
-    title: 'Royal Wedding',
-    category: 'mern',
-    description: 'Elegant Royal Wedding Invitation Website | Responsive design with a luxurious digital invitation experience.',
-    tags: ['MERN Stack', 'Wedding Card', 'Typescript', 'REST APIs'],
-    image: '/screenshots/Royal.png',
-    demoUrl: 'https://royal-wedding-site.vercel.app/',
+    description: 'Car Rental Platform | Complete frontend and backend system with user authentication, car listings, search, booking, payment integration, and vehicle management.',
+    tags: ['MERN Stack', 'Car Rental', 'React / Node', 'MongoDB', 'REST APIs', 'Payment Integration'],
+    image: '/screenshots/driveflex.png',
+    demoUrl: 'https://drive-flex.vercel.app/',
     repoUrl: 'https://github.com/lets-abdullah',
     featured: true
   },
@@ -60,11 +38,44 @@ export const PROJECTS: Project[] = [
     featured: false
   },
   {
+    id: 'elysia-hotel',
+    title: 'Elysia Hotel Booking',
+    category: 'mern',
+    description: 'Full-stack hotel reservation platform.',
+    tags: ['MERN Stack', 'Hotel Website', 'React / Node', 'MongoDB', 'REST APIs'],
+    image: '/screenshots/hotel.png',
+    demoUrl: 'https://elysia-frontend-hotel.vercel.app/',
+    repoUrl: 'https://github.com/lets-abdullah',
+    featured: true
+  },
+  {
+    id: 'elysia-hotel-erp',
+    title: 'Elysia Hotel ERP',
+    category: 'mern',
+    description: 'Full-stack hotel ERP for room bookings, guest ledgers, and automated billing.',
+    tags: ['Dashboard', 'Hotel ERP', 'React / Node', 'MongoDB', 'REST APIs'],
+    image: '/screenshots/hotel erp.png',
+    demoUrl: 'https://elysia-zeta-bice.vercel.app/',
+    repoUrl: 'https://github.com/lets-abdullah',
+    featured: true
+  },
+  {
+    id: 'wedding',
+    title: 'Royal Wedding',
+    category: 'mern',
+    description: 'Elegant Royal Wedding Invitation Website | Responsive design with a luxurious digital invitation experience.',
+    tags: ['MERN Stack', 'Wedding Card', 'Typescript', 'REST APIs'],
+    image: '/screenshots/Royal.png',
+    demoUrl: 'https://royal-wedding-site.vercel.app/',
+    repoUrl: 'https://github.com/lets-abdullah',
+    featured: true
+  },
+  {
     id: 'fitzone-gym',
     title: 'Fitzone Gym Hub',
     category: 'mern',
     description: 'High-performance membership portal and fitness tracker with dark-mode UI, MongoDB schemas, and JWT auth.',
-    tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB' , 'Payment Integration' ],
+    tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Payment Integration'],
     image: '/screenshots/Gym.png',
     demoUrl: 'https://fitzone-gym-knowledge-hub.vercel.app/',
     repoUrl: 'https://github.com/lets-abdullah',
@@ -98,7 +109,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     type: 'Freelance & Contract',
     description: 'Delivering production full-stack web applications and custom POS/ERP solutions for commercial clients.',
     bullets: [
-      'Engineered custom ERP & POS applications (PharmaFlow, Elysia Hotel, Ghalla Mandi).',
+      'Engineered custom full-stack web applications & ERP systems (DriveFlex Rentals, Elysia Hotel, Ghalla Mandi).',
       'Developed secure REST APIs with stateless JWT authentication and role-based access control.',
       'Configured CI/CD automated deployment pipelines on Vercel Edge and Railway cloud.'
     ],

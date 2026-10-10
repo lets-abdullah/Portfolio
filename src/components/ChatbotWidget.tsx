@@ -43,7 +43,8 @@ export const ChatbotWidget: React.FC = () => {
         reply = `Abdullah specializes in the MERN Stack (MongoDB, Express.js, React.js, Node.js), TypeScript, REST APIs, POS & ERP Systems, JavaScript ES6+, HTML5/CSS3, and modern Git workflows.`;
         document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' });
       } else if (q.includes('project') || q.includes('live') || q.includes('work') || q.includes('portfolio')) {
-        reply = `Abdullah has engineered 4 major production platforms:\n• PharmaFlow ERP (Pharmacy Management & Live POS)\n• Elysia (Hotel Booking & Staff Operations ERP)\n• Ghalla Mandi POS (Grain Commodity Ledger ERP)\n• Fitzone Gym Hub (Fitness & Membership Portal).`;
+        const projectList = PROJECTS.map((p) => `• ${p.title} (${p.tags.slice(0, 2).join(' / ')})`).join('\n');
+        reply = `Abdullah has engineered ${PROJECTS.length} production platforms & applications:\n${projectList}`;
         document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
       } else if (q.includes('job') || q.includes('current') || q.includes('company') || q.includes('hat')) {
         reply = `Abdullah is currently employed as a Web Developer at HAT Tech Media in Multan, Pakistan, building POS interfaces, inventory management systems, and REST APIs.`;
